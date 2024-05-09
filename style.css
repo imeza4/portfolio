@@ -1,0 +1,145 @@
+/* Your reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Your navbar CSS */
+.navbar-brand {
+    margin-left: 3vw;
+    font-weight: bold;
+    font-family: 'Manuale';
+    letter-spacing: 0.5vw;
+}
+
+.navbar-brand:hover{
+    color:#606C38;
+}
+.navbar{
+    position: fixed;
+    background-color: #F0F4EF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* Navigation Link */
+.nav-link {
+    color:black;
+    font-family:'Lora';
+    letter-spacing: 0.1vw;
+    list-style: none;
+    /* padding: 2.1rem; */
+    margin: 1rem 0rem 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    position: relative; /* Add this to position the pseudo-element */
+}
+
+/* add underline to current page */
+.nav-link.main:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #8256A9;
+    position: absolute;
+    bottom: -1px; 
+}
+
+/* add underline */
+.nav-link.line:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #8256A9;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* expand underline on hover */
+.nav-link.line:hover:after {
+    width: 100%;
+}
+/* change color of text */
+.nav-link:hover{
+    color: #8256A9;
+}
+
+.navbar-nav {
+    margin-left: 40vw;
+    margin-right: 20vw;
+}
+
+li {
+    display: inline;
+    margin-right: 3vw;
+}
+
+ @media screen and (max-width: 985px) {
+    .navbar-brand {
+        font-size: 3vw;
+    }
+ }
+
+ @media screen and (min-width: 985px) {
+    .navbar-brand {
+        font-size: 2.5vw;
+    }
+ }
+
+ .section-1 {
+    margin-bottom: 0;
+    position: relative;
+    top: 9vw;
+
+ }
+
+ @media screen and (max-width: 767px) {
+    .main-header {
+        font-size: 4rem;
+    }
+ }
+
+ @media screen and (min-width: 767px) {
+    .main-header {
+        font-size: 4rem;
+    }
+ }
+
+ /* .main-header {
+    color: black
+ } */
+
+ /* .description {
+    color: black;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+ @media screen and (min-width: 767px) {
+    .description {
+        font-size: 1.6em;
+    }
+ }
+
+ @media screen and (min-width: 767px) {
+    .description-2 {
+        font-size: 1.4vw;
+        color: darkgray;
+    }
+ }
+
+ a {
+    color: black;
+    cursor: pointer;
+}
