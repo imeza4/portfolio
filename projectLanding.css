@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+}
+
+.brand{
+    font-weight: bold;
+    font-family: 'Manuale';
+    letter-spacing: 0.3vw;
+}
+
+/* Your navbar CSS */
+.navbar-brand {
+    margin-left: 3vw;
+}
+
+.navbar-brand:hover{
+    color:#606C38;
+}
+.navbar{
+    position: fixed;
+    background-color: #F0F4EF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* Navigation Link */
+.nav-link {
+    color:black;
+    font-family:'Lora';
+    letter-spacing: 0.1vw;
+    list-style: none;
+    /* padding: 2.1rem; */
+    margin: 1rem 0rem 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    position: relative; /* Add this to position the pseudo-element */
+}
+
+/* add underline to current page */
+.nav-link.main:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #8256A9;
+    position: absolute;
+    bottom: -1px; 
+}
+
+/* add underline */
+.nav-link.line:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #8256A9;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* expand underline on hover */
+.nav-link.line:hover:after {
+    width: 100%;
+}
+/* change color of text */
+.nav-link:hover{
+    color: #8256A9;
+}
+
+.navbar-nav {
+    margin-left: 40vw;
+    margin-right: 20vw;
+}
+
+li {
+    display: inline;
+    margin-right: 3vw;
+}
+
+ @media screen and (max-width: 985px) {
+    .navbar-brand {
+        font-size: 3vw;
+    }
+ }
+
+ @media screen and (min-width: 985px) {
+    .navbar-brand {
+        font-size: 2.5vw;
+    }
+ }
+
+ .section-1 {
+    margin-bottom: 0;
+    position: relative;
+    top: 9vw;
+
+ }
+
+ @media screen and (max-width: 767px) {
+    .main-header {
+        font-size: 4rem;
+    }
+ }
+
+ @media screen and (min-width: 767px) {
+    .main-header {
+        font-size: 4rem;
+    }
+ }
+
+
+/* End of Nav Bar stuff */
+
+
+
+
+
+
+ /* all project page css */
+.a {
+    color: #8256A9;
+    cursor: pointer;
+}
+
+.projectTitle{
+    font-family:'Manuale';
+    font-size:2em;
+    color:#606C38;
+}
+
+.header2{
+    font-size:1.3em;
+    font-family:'Manuale';
+    color: #BC6C25;
+}   
+
+@media screen and (min-width: 767px) {
+    .regularText {
+        font-size: 1.3em;
+        font-family: 'Manuale';
+    }
+ }
+
+.caseStudyLink{
+    font-family: 'Manuale';
+    color:#606C38;
+    position: relative; /* Add this to position the pseudo-element */
+}
+
+.caseStudyLink:hover{
+    color:#8256A9;
+}
+
+.caseStudyLink::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #8256A9;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 1;
+    left: 0;
+}

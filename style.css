@@ -4,12 +4,15 @@
     padding: 0;
 }
 
+.brand{
+    font-weight: bold;
+    font-family: 'Manuale';
+    letter-spacing: 0.3vw;
+}
+
 /* Your navbar CSS */
 .navbar-brand {
     margin-left: 3vw;
-    font-weight: bold;
-    font-family: 'Manuale';
-    letter-spacing: 0.5vw;
 }
 
 .navbar-brand:hover{
@@ -113,33 +116,81 @@ li {
     }
  }
 
- /* .main-header {
-    color: black
- } */
 
- /* .description {
-    color: black;
+/* End of Nav Bar stuff */
+
+
+
+
+
+
+
+/* CSS for about */
+
+.header2{
+    color: #BC6C25;
+    font-weight: semi-bold;
+    font-family: 'Manuale';
+    font-size:1.5em
+}
+
+@media screen and (min-width: 767px) {
+    .regularText {
+        font-size: 1.5em;
+        font-family: 'Manuale';
+    }
+ }
+
+
+
+.overallPage {
+    display: flex;
+    margin: 7vw;
+    flex-wrap: wrap;
+}
+
+.brand.title {
+    font-size: 3em;
+    color: #606C38;
+    margin-bottom: 0;
+}
+
+.leftside {
+    flex: 0 0 30%;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 767px) {
+    .leftside {
+        flex: 100%;
+        margin-left: 0;
+    }
+}
+
+.content-image {
+    max-width: 100%;
     display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-} */
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 1rem;
+}
 
- @media screen and (min-width: 767px) {
-    .description {
-        font-size: 1.6em;
-    }
- }
+.rightSide {
+    flex: 1;
+    padding-left: 3vw;
+    padding-top: 2vw;
+}
 
- @media screen and (min-width: 767px) {
-    .description-2 {
-        font-size: 1.4vw;
-        color: darkgray;
-    }
- }
+.header2.headMain {
+    font-size: 2.2em;
+    margin-bottom: 1rem;
+}
 
- a {
-    color: black;
-    cursor: pointer;
+.moreInfo{
+    display: flex; /* Add this to make child elements side by side */
+    flex-flow: column-wrap;
+}
+
+.FunFactBox{
+    margin-left:10vw;
 }
