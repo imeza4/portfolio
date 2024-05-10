@@ -130,13 +130,14 @@ li {
 }
 
 .titleContainer{
-    padding-top: 2vw;
-    padding-left: 3vw;
+    padding-top: 1.4vw;
+    padding-left: 4vw;
 }
 
   .backLink{
     color: #606C38;
-
+    font-family: 'Manuale';
+    font-size: 1.3em;
   }
 
   .backLink:hover{
@@ -182,7 +183,7 @@ li {
     }
 }
 
-.imageContainer{
+.titleImageContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,3 +238,31 @@ li {
   }
 
 
+.image{
+    height: 300px;
+    margin: .5vw;
+}
+
+.imageContainer{
+    display:flex;
+    align-items: center;
+}
+
+  .AllImageContainer{
+    display:flex;
+    flex-flow: row-wrap;
+    justify-content: space-around;
+  }
+
+
+  .WebsiteLink{
+    color: #606C38;
+    font-weight: bold;
+    font-family: 'Manuale';
+    letter-spacing: 0.05vw;
+    font-size: 2.5em;
+  }
+
+  .WebsiteLink:hover{
+    color: #8256A9;
+  }
