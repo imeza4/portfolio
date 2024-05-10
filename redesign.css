@@ -1,0 +1,17 @@
+
+
+
+
+.project-title {
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.10vw;
+    color:black;
+  
+    text-decoration: underline;
+    text-decoration-style: solid 5vw;
+    text-decoration-color: darkseagreen;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 1.2vw;
+  }

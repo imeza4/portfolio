@@ -129,6 +129,11 @@ li {
 
 
  /* all project page css */
+
+
+ .everything{
+    margin: 13vw 7vw 7vw 7vw;
+ }
 .a {
     color: #8256A9;
     cursor: pointer;
@@ -138,12 +143,14 @@ li {
     font-family:'Manuale';
     font-size:2em;
     color:#606C38;
+    margin-bottom: 0;
 }
 
 .header2{
     font-size:1.3em;
     font-family:'Manuale';
     color: #BC6C25;
+    margin-top:0;
 }   
 
 @media screen and (min-width: 767px) {

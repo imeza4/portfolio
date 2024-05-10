@@ -145,7 +145,7 @@ li {
 
 .overallPage {
     display: flex;
-    margin: 7vw;
+    margin: 13vw 7vw 7vw 7vw;
     flex-wrap: wrap;
 }
 
