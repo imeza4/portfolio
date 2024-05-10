@@ -121,35 +121,119 @@ li {
 
 
 .banner{
-    margin: 9.5vw 7vw 7vw 4vw;
+    padding: 9.5vw 7vw 2vw 4vw;
 }
 
 /* banner */
+.banner{
+    background-color: #E8F0FF;
+}
 
 .titleContainer{
+    padding-top: 2vw;
     padding-left: 3vw;
 }
 
-.project-title {
+  .backLink{
+    color: #606C38;
 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .backLink:hover{
+    color: #8256A9;
+  }
+
+.title{
     font-weight: bolder;
+    letter-spacing: 0.10vw;
+    color:black;
+    font-family: 'Manuale';
+    font-size: 3.5em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.subtitle{
+    font-weight: bolder;
+    letter-spacing: 0.10vw;
+    color:black;
+    font-family: 'Manuale';
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+  /* end of banner */
+
+ /* image stuff */
+ img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.redesignImg {
+    height: 140px;
+    /* padding: 4%; */
+}
+
+@media only screen and (max-width: 700px) {
+    .project-pics {
+        margin: 2rem 2rem 2rem 0;
+    }
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7vw 0 7vw;
+    padding-bottom: 0%;
+}
+
+
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem 2rem 4rem;
+    background-color: #809BCE;
+    padding: 2vw 8vw 2vw 8vw;
+    box-shadow: .8vw .8vw .5vw rgba(0, 0, 0, 0.1);
+}
+
+
+  /* section */
+.sectionContainer{
+    margin: 0vw 7vw 0vw 7vw;
+    padding-bottom: 3vw;
+}
+.sectionTitle {
+
+    font-family:'Manuale';
+    font-weight: bold;
+    font-size: 2.3em;
     letter-spacing: 0.10vw;
     color:black;
   
     text-decoration: underline;
     text-decoration-style: solid 5vw;
-    text-decoration-color: darkseagreen;
+    text-decoration-color: #809BCE;
     text-decoration-thickness: 6px;
     text-underline-offset: 1.2vw;
   }
 
-  /* end of banner */
+  @media screen and (min-width: 767px) {
+    .regularText {
+        font-size: 1.3em;
+        font-family: 'Manuale';
+        letter-spacing: 0.05vw;
+        color:black;
+    }
+ }
+
+ .bullet-style{
+    color:black;
+    display:list-item;
+  }
 
 
-
-
-  /* section */
-.sectionContainer{
-    margin: 0vw 14vw 0vw 7vw;
-}
