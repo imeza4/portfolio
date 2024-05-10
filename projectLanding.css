@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 a {
     color: black;
@@ -132,7 +134,7 @@ li {
 
 
  .everything{
-    margin: 13vw 7vw 7vw 7vw;
+    margin: 11vw 7vw 7vw 7vw;
  }
 .a {
     color: #8256A9;
@@ -181,3 +183,80 @@ li {
     bottom: 1;
     left: 0;
 }
+
+    /* image stuff */
+    img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+    .redesignImg {
+        height: 240px;
+        /* padding: 4%; */
+    }
+
+    @media only screen and (max-width: 700px) {
+        .project-pics {
+            margin: 2rem 2rem 2rem 0;
+        }
+    }
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 2rem 2rem 4rem;
+        background-color: #809BCE;
+        padding: 2vw 8vw 2vw 8vw;
+        box-shadow: .8vw .8vw .5vw rgba(0, 0, 0, 0.1);
+
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+    
+    .imageContainer:hover {
+        transform: scale(1.05); /* Increase size on hover */
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.3s ease; /* Add transition for smooth fade-in */
+    }
+    
+    .imageContainer:hover .overlay {
+        opacity: 1; /* Show overlay on hover */
+    }
+    
+    .overlay-text {
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 50%; /* Center text vertically */
+    }
+
+    .redesignContainer{
+        display: flex; /* Add this to make child elements side by side */
+        flex-flow: column-wrap;
+    }
+    @media only screen and (max-width: 700px) {
+        .redesignContainer {
+        display: flex; /* Add this to make child elements side by side */
+        flex-flow: wrap;
+        }
+    }
+
+    .descriptionContainer{
+        display: flex;
+        align-items: end;
+        margin-right:4rem;
+        padding-left: 3.5vw;
+    }
+    .link-Project{
+        text-align: right;
+    }
+    
+
