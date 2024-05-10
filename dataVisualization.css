@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.brand{
+    font-weight: bold;
+    font-family: 'Manuale';
+    letter-spacing: 0.3vw;
+}
+
+/* Your navbar CSS */
+.navbar-brand {
+    margin-left: 3vw;
+}
+
+.navbar-brand:hover{
+    color:#606C38;
+}
+.navbar{
+    position: fixed;
+    background-color: #F0F4EF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* Navigation Link */
+.nav-link {
+    color:black;
+    font-family:'Lora';
+    letter-spacing: 0.1vw;
+    list-style: none;
+    /* padding: 2.1rem; */
+    margin: 1rem 0rem 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    position: relative; /* Add this to position the pseudo-element */
+}
+
+/* add underline to current page */
+.nav-link.main:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #8256A9;
+    position: absolute;
+    bottom: -1px; 
+}
+
+/* add underline */
+.nav-link.line:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #8256A9;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* expand underline on hover */
+.nav-link.line:hover:after {
+    width: 100%;
+}
+/* change color of text */
+.nav-link:hover{
+    color: #8256A9;
+}
+
+.navbar-nav {
+    margin-left: 40vw;
+    margin-right: 20vw;
+}
+
+li {
+    display: inline;
+    margin-right: 3vw;
+}
+
+ @media screen and (max-width: 985px) {
+    .navbar-brand {
+        font-size: 3vw;
+    }
+ }
+
+ @media screen and (min-width: 985px) {
+    .navbar-brand {
+        font-size: 2.5vw;
+    }
+ }
+
+ .section-1 {
+    margin-bottom: 0;
+    position: relative;
+    top: 9vw;
+
+ }
+
+ @media screen and (max-width: 767px) {
+    .main-header {
+        font-size: 4rem;
+    }
+ }
+
+ @media screen and (min-width: 767px) {
+    .main-header {
+        font-size: 4rem;
+    }
+ }
+
+
+/* End of Nav Bar stuff */
+
+
+
+.banner{
+    padding: 9.5vw 7vw 2vw 4vw;
+}
+
+/* banner */
+.banner{
+    background-color: #E8F0FF;
+}
+
+.titleContainer{
+    padding-top: 1.4vw;
+    padding-left: 4vw;
+}
+
+  .backLink{
+    color: #606C38;
+    font-family: 'Manuale';
+    font-size: 1.3em;
+  }
+
+  .backLink:hover{
+    color: #8256A9;
+  }
+
+
+.title{
+    font-weight: bolder;
+    letter-spacing: 0.10vw;
+    color:black;
+    font-family: 'Manuale';
+    font-size: 3.5em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.subtitle{
+    font-weight: bolder;
+    letter-spacing: 0.10vw;
+    color:black;
+    font-family: 'Manuale';
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+  /* end of banner */
+
+ /* image stuff */
+ img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.redesignImg {
+    height: 140px;
+    /* padding: 4%; */
+}
+
+@media only screen and (max-width: 700px) {
+    .project-pics {
+        margin: 2rem 2rem 2rem 0;
+    }
+}
+
+.titleImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7vw 0 7vw;
+    padding-bottom: 0%;
+}
+
+
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem 2rem 4rem;
+    background-color: #809BCE;
+    padding: 2vw 8vw 2vw 8vw;
+    box-shadow: .8vw .8vw .5vw rgba(0, 0, 0, 0.1);
+}
+
+
+  /* section */
+.sectionContainer{
+    margin: 0vw 7vw 0vw 7vw;
+    padding-bottom: 3vw;
+}
+.sectionTitle {
+
+    font-family:'Manuale';
+    font-weight: bold;
+    font-size: 2.3em;
+    letter-spacing: 0.10vw;
+    color:black;
+  
+    text-decoration: underline;
+    text-decoration-style: solid 5vw;
+    text-decoration-color: #809BCE;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 1.2vw;
+  }
+
+  @media screen and (min-width: 767px) {
+    .regularText {
+        font-size: 1.3em;
+        font-family: 'Manuale';
+        letter-spacing: 0.05vw;
+        color:black;
+    }
+ }
+
+ .bullet-style{
+    color:black;
+    display:list-item;
+  }
+
+
+.image{
+    height: 300px;
+    margin: .5vw;
+}
+
+.imageContainer{
+    display:flex;
+    align-items: center;
+}
+
+  .AllImageContainer{
+    display:flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+
+
+  .WebsiteLink{
+    color: #606C38;
+    font-weight: bold;
+    font-family: 'Manuale';
+    letter-spacing: 0.05vw;
+    font-size: 2.5em;
+  }
+
+  .WebsiteLink:hover{
+    color: #8256A9;
+  }
