@@ -144,6 +144,7 @@ li {
     color: #8256A9;
   }
 
+
 .title{
     font-weight: bolder;
     letter-spacing: 0.10vw;
@@ -250,7 +251,7 @@ li {
 
   .AllImageContainer{
     display:flex;
-    flex-flow: row-wrap;
+    flex-flow: wrap;
     justify-content: space-around;
   }
 
