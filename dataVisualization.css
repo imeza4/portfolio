@@ -126,7 +126,7 @@ li {
 
 /* banner */
 .banner{
-    background-color: #E8F0FF;
+    background-color: #FDF5D1;
 }
 
 .titleContainer{
@@ -198,8 +198,8 @@ li {
     justify-content: center;
     align-items: center;
     margin: 2rem 2rem 2rem 4rem;
-    background-color: #809BCE;
-    padding: 2vw 8vw 2vw 8vw;
+    background-color: #F0E2A3;
+    padding: 2vw 4.55vw 2vw 4.5vw;
     box-shadow: .8vw .8vw .5vw rgba(0, 0, 0, 0.1);
 }
 
@@ -215,11 +215,11 @@ li {
     font-weight: bold;
     font-size: 2.3em;
     letter-spacing: 0.10vw;
-    color:black;
+    color:#BC6C25;
   
     text-decoration: underline;
     text-decoration-style: solid 5vw;
-    text-decoration-color: #809BCE;
+    text-decoration-color: #F0E2A3;
     text-decoration-thickness: 6px;
     text-underline-offset: 1.2vw;
   }
@@ -232,6 +232,13 @@ li {
         color:black;
     }
  }
+
+ .regularText {
+    font-size: 1.3em;
+    font-family: 'Manuale';
+    letter-spacing: 0.05vw;
+    color:black;
+}
 
  .bullet-style{
     color:black;
@@ -261,9 +268,16 @@ li {
     font-weight: bold;
     font-family: 'Manuale';
     letter-spacing: 0.05vw;
-    font-size: 2.5em;
   }
 
   .WebsiteLink:hover{
     color: #8256A9;
+  }
+
+  .SurroundingWords{
+    color: black;
+    font-weight: bold;
+    font-family: 'Manuale';
+    letter-spacing: 0.05vw;
+    font-size: 2.5em;
   }

@@ -140,11 +140,15 @@ li {
     }
  }
 
+ .regularText {
+    font-size: 1.5em;
+    font-family: 'Manuale';
+}
 
 
 .overallPage {
     display: flex;
-    margin: 13vw 7vw 7vw 7vw;
+    margin: 10vw 7vw 7vw 7vw;
     flex-wrap: wrap;
 }
 
@@ -157,6 +161,7 @@ li {
 .leftside {
     flex: 0 0 30%;
     margin-left: 2%;
+    padding-top: 2vw;
 }
 
 @media screen and (max-width: 767px) {
@@ -178,6 +183,7 @@ li {
     flex: 1;
     padding-left: 3vw;
     padding-top: 2vw;
+    margin-right: 4vw;
 }
 
 .header2.headMain {
@@ -185,11 +191,30 @@ li {
     margin-bottom: 1rem;
 }
 
-.moreInfo{
-    display: flex; /* Add this to make child elements side by side */
+/* .moreInfo{
+    display: flex; 
     flex-flow: column-wrap;
+} */
+
+/* .FunFactBox{
+    margin-left:10vw;
+} */
+
+.ContactBox{
+    margin-right: 5vw;
 }
 
-.FunFactBox{
-    margin-left:10vw;
+.factText{
+    font-size: 1.3em;
+    font-family: 'Manuale';
+    letter-spacing: 0.05vw;
+    color:black;
 }
+
+.factText.contact:hover{
+    color:#8256A9
+}
+.bullet-style{
+    color:black;
+    display:list-item;
+  }

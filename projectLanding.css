@@ -162,6 +162,13 @@ li {
     }
  }
 
+ .regularText {
+    font-size: 1.3em;
+    font-family: 'Manuale';
+    letter-spacing: 0.05vw;
+    color:black;
+}
+
 .caseStudyLink{
     font-family: 'Manuale';
     color:#606C38;

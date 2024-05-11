@@ -215,7 +215,7 @@ li {
     font-weight: bold;
     font-size: 2.3em;
     letter-spacing: 0.10vw;
-    color:black;
+    color:#606C38;
   
     text-decoration: underline;
     text-decoration-style: solid 5vw;
@@ -232,6 +232,13 @@ li {
         color:black;
     }
  }
+
+ .regularText {
+    font-size: 1.3em;
+    font-family: 'Manuale';
+    letter-spacing: 0.05vw;
+    color:black;
+}
 
  .bullet-style{
     color:black;
@@ -257,7 +264,7 @@ li {
 
 
   .WebsiteLink{
-    color: #606C38;
+    color: #BC6C25;
     font-weight: bold;
     font-family: 'Manuale';
     letter-spacing: 0.05vw;
