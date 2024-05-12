@@ -3,6 +3,26 @@
     padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+    body {
+        padding-top: 6vw; 
+    }
+    .banner{
+        background-color: #E8F0FF;
+        padding: 9.5vw 7vw 2vw 4vw;
+        position: relative;
+    }
+    .backLink{
+        color: #606C38;
+        font-family: 'Manuale';
+        font-size: 1.3em;
+        position: absolute;
+        top: 9.5vw; /* Adjust this value as needed */
+        left: 4vw; /* Adjust this value as needed */
+        z-index: 100; /* Ensure it's above other elements */
+      }
+ }
+
 .brand{
     font-weight: bold;
     font-family: 'Manuale';
@@ -280,4 +300,25 @@ li {
     font-family: 'Manuale';
     letter-spacing: 0.05vw;
     font-size: 2.5em;
+  }
+
+
+  .movingPageContainer{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 3vw;
+  }
+
+  .movingLink{
+    color:#606C38;
+    font-family: 'Manuale';
+    font-size: 1.8em;
+    padding: 0vw 1vw 0vw 1vw;
+  }
+
+  .movingLink:hover{
+    color:#8256A9
+  }
+  .movingLink.special:hover{
+    color: #606C38
   }

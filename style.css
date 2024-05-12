@@ -211,7 +211,13 @@ li {
     color:black;
 }
 
-.factText.contact:hover{
+.contact{
+    color: #606C38;
+    font-size: 1.3em;
+    font-family: 'Manuale';
+    letter-spacing: 0.05vw;
+}
+.contact:hover{
     color:#8256A9
 }
 .bullet-style{

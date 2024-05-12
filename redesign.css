@@ -3,6 +3,28 @@
     padding: 0;
 }
 
+
+@media screen and (max-width: 767px) {
+    body {
+        padding-top: 6vw; 
+    }
+    .banner{
+        background-color: #E8F0FF;
+        padding: 9.5vw 7vw 2vw 4vw;
+        position: relative;
+    }
+    .backLink{
+        color: #606C38;
+        font-family: 'Manuale';
+        font-size: 1.3em;
+        position: absolute;
+        top: 9.5vw; /* Adjust this value as needed */
+        left: 4vw; /* Adjust this value as needed */
+        z-index: 100; /* Ensure it's above other elements */
+      }
+ }
+
+
 .brand{
     font-weight: bold;
     font-family: 'Manuale';
@@ -96,6 +118,7 @@ li {
     }
  }
 
+
  .section-1 {
     margin-bottom: 0;
     position: relative;
@@ -120,13 +143,10 @@ li {
 
 
 
-.banner{
-    padding: 9.5vw 7vw 2vw 4vw;
-}
-
 /* banner */
 .banner{
     background-color: #E8F0FF;
+    padding: 9.5vw 7vw 2vw 4vw;
 }
 
 .titleContainer{
@@ -137,13 +157,29 @@ li {
   .backLink{
     color: #606C38;
     font-family: 'Manuale';
-    font-size: 1.3em;
+    font-size:1.3em;
   }
 
   .backLink:hover{
     color: #8256A9;
   }
 
+  /* this adds line to the left of the main title */
+
+  /* .titleLine {
+    position: relative;
+}
+
+.titleLine::before {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: -4vw; 
+    width: 1vh;
+    height: 58%; 
+    background-color: #809BCE;
+} */
 
 .title{
     font-weight: bolder;
@@ -273,4 +309,21 @@ li {
 
   .WebsiteLink:hover{
     color: #8256A9;
+  }
+
+
+  .movingPageContainer{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 3vw;
+  }
+
+  .movingLink{
+    color:#606C38;
+    font-family: 'Manuale';
+    font-size: 1.8em;
+  }
+
+  .movingLink:hover{
+    color:#8256A9
   }
