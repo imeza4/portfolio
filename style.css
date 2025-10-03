@@ -1,23 +1,18 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
 }
 
-.brand{
+/* Brand styling */
+.brand {
     font-weight: bold;
     font-family: 'Manuale';
     letter-spacing: 0.3vw;
 }
 
-/* Your navbar CSS */
-.navbar-brand {
-    margin-left: 3vw;
-}
-
-.navbar-brand:hover{
-    color:#606C38;
-}
-.navbar{
+/* Navbar */
+.navbar {
     position: fixed;
     background-color: #F0F4EF;
     top: 0;
@@ -26,22 +21,27 @@
     z-index: 100;
 }
 
+.navbar-brand {
+    margin-left: 3vw;
+}
 
-/* Navigation Link */
+.navbar-brand:hover {
+    color: #606C38;
+}
+
+/* Navigation links */
 .nav-link {
-    color:black;
-    font-family:'Lora';
+    color: black;
+    font-family: 'Lora';
     letter-spacing: 0.1vw;
     list-style: none;
-    /* padding: 2.1rem; */
     margin: 1rem 0rem 1rem 1rem;
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
-    position: relative; /* Add this to position the pseudo-element */
+    position: relative;
 }
 
-/* add underline to current page */
 .nav-link.main:after {
     content: '';
     display: block;
@@ -49,10 +49,9 @@
     height: 2px;
     background: #8256A9;
     position: absolute;
-    bottom: -1px; 
+    bottom: -1px;
 }
 
-/* add underline */
 .nav-link.line:after {
     content: '';
     display: block;
@@ -65,12 +64,11 @@
     left: 0;
 }
 
-/* expand underline on hover */
 .nav-link.line:hover:after {
     width: 100%;
 }
-/* change color of text */
-.nav-link:hover{
+
+.nav-link:hover {
     color: #8256A9;
 }
 
@@ -79,81 +77,66 @@
     margin-right: 20vw;
 }
 
-/* Navbar list items only */
 .navbar-nav li {
     display: inline;
     margin-right: 3vw;
-  }
-  
- @media screen and (max-width: 985px) {
+}
+
+/* Responsive navbar brand size */
+@media screen and (max-width: 985px) {
     .navbar-brand {
         font-size: 3vw;
     }
- }
+}
 
- @media screen and (min-width: 985px) {
+@media screen and (min-width: 985px) {
     .navbar-brand {
         font-size: 2.5vw;
     }
- }
+}
 
- .section-1 {
+/* Section offset for fixed nav */
+.section-1 {
     margin-bottom: 0;
     position: relative;
     top: 9vw;
+}
 
- }
+/* Headers */
+.main-header {
+    font-size: 4rem;
+}
 
- @media screen and (max-width: 767px) {
-    .main-header {
-        font-size: 4rem;
-    }
- }
-
- @media screen and (min-width: 767px) {
-    .main-header {
-        font-size: 4rem;
-    }
- }
-
-
-/* End of Nav Bar stuff */
-
-
-
-
-
-
-
-/* CSS for about */
-
-.header2{
+.header2 {
     color: #BC6C25;
-    font-weight: semi-bold;
+    font-weight: 600;
     font-family: 'Manuale';
-    font-size:1.5em
+    font-size: 1.5em;
+}
+
+.header2.headMain {
+    font-size: 2.2em;
+    margin-bottom: 1rem;
+}
+
+/* Regular text */
+.regularText {
+    font-size: 1.5em;
+    font-family: 'Manuale';
 }
 
 @media screen and (min-width: 767px) {
     .regularText {
         font-size: 1.5em;
-        font-family: 'Manuale';
     }
- }
-
- .regularText {
-    font-size: 1.5em;
-    font-family: 'Manuale';
 }
 
 
+/* Overall layout */
 .overallPage {
     display: flex;
-    margin: 10vw 7vw 7vw 7vw;
     flex-wrap: wrap;
-
-        /* gap: 2rem; */
-      
+    margin: 10vw 7vw 7vw 7vw;
 }
 
 .brand.title {
@@ -162,125 +145,194 @@
     margin-bottom: 0;
 }
 
-.mainStuff {
-    flex: 1;              /* expands to fill available space */
-    order: 1;
-    margin-right: 2rem;
-  }
-  
-  /* image sits beside mainStuff */
-  .leftside {
-    flex: 0 0 30%;        /* about 30% width for the image */
-    order: 2;
+/* New wrapper for description + image */
+.topRow {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  width: 100%;
+}
+/* inside topRow, size them */
+.topRow .mainStuff {
+  flex: 0 0 60%;
+  max-width: 60%;
+  justify-content: center;
+  padding-top:2rem;
+}
+
+.topRow .leftside {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;  /* keeps it centered horizontally */
+  align-items: flex-start;
+  /* padding-left: rem;  */
+}
+
+.topRow-imageContainer{
     display: flex;
-    justify-content: center; /* center image horizontally */
-    align-items: center;     /* center image vertically */
-  }
-  
-  /* moreInfo sits below, spanning full width */
-  .moreInfo {
-    flex: 1 1 100%;
-    order: 3;
-  }
-  
-@media screen and (max-width: 767px) {
-    .overallPage {
-        flex-direction: column; /* stack instead of side by side */
-      }
-    
-      .rightSide {
-        order: 1; /* mainStuff first */
-      }
-    
-      .leftside {
-        order: 2; /* image goes in the middle */
-        flex: 100%;
-        margin-left: 0;
-      }
-    
-      .moreInfo {
-        margin-top: 1.5em;
-        order: 3; /* moreInfo last */
-      }
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    width: 80%;            /* box size */
+    height: auto;           /* box size */
+    background: #f2f2f2;     /* optional background for clarity */
+    border: 1px solid #ccc; 
+    margin-top: 4rem;
 }
 
+/* Make sure image fills its column without shrinking */
 .content-image {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     display: block;
-    margin-right: auto;
-    margin-left: 0;
-    margin-top: 1rem;
+    object-fit: cover;  /* keeps proportions */
 }
 
-.rightSide {
-    flex: 1;
-    padding-left: 3vw;
-    padding-top: 2vw;
-    margin-right: 4vw;
+
+/* Info section spans full width under the row above */
+.moreInfo {
+    flex: 0 0 100%;
+    max-width: 60%;
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* margin-top: 2rem; */
+    margin-right: 4rem;
 }
 
-.header2.headMain {
-    font-size: 2.2em;
-    margin-bottom: 1rem;
+/* Tech + Community row */
+.TechCommunityRow {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: stretch;
+    gap: 2rem;
 }
 
-.moreInfo{
-    display: flex; 
-    flex-flow: column-wrap;
+.TechBox, .CommunityBox {
+    flex: 1 1 40%;
 }
 
-.FunFactBox{
-    padding-right: 3vw;
+/* Fun Facts + Contact row */
+.FactsContactRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.ContactBox{
-    margin-right: 5vw;
+.FunFactBox, .ContactBox {
+    flex: 1 1 45%;
 }
 
-/* Contact Info list items stack vertically */
+/* Fun Facts */
+.factText {
+    font-size: 1.3em;
+    font-family: 'Manuale';
+    letter-spacing: 0.05vw;
+    color: black;
+}
+
+.bullet-style {
+    color: black;
+    display: list-item;
+}
+
+/* Contact Box */
 .ContactBox ul {
-    list-style: none;   /* remove default bullet */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
-  
+
 .ContactBox li {
-    display: block;     /* ensures each link stacks on a new line */
-    margin-bottom: 0.5rem; /* spacing between links */
-}
-
-
-
-.factText{
-    font-size: 1.3em;
-    font-family: 'Manuale';
-    letter-spacing: 0.05vw;
-    color:black;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .contact {
-    display: inline-flex;     
-    align-items: center;      
-    gap: 0.5rem;              
-    color: #606C38;           
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #606C38;
     font-size: 1.3em;
     font-family: 'Manuale';
     letter-spacing: 0.05vw;
-    text-decoration: none;    
-    white-space: nowrap;      
-    transition: color 0.3s ease; /* smooth transition */
-  }
-  
-  .contact i {
-    flex-shrink: 0;
-    color: inherit;            /* icon inherits link color */
+    text-decoration: none;
+    white-space: nowrap;
     transition: color 0.3s ease;
-  }
-  
-  .contact:hover {
-    color: #8256A9;            /* changes both text + icon */
-  }
-.bullet-style{
-    color:black;
-    display:list-item;
-  }
+}
+
+.contact i {
+    flex-shrink: 0;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.contact:hover {
+    color: #8256A9;
+}
+
+/* Image containers (buttons) */
+.imageContainerRedesign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .8vw .8vw .5vw rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 3px solid #bfa9d3; /* <-- shorthand: width + style + color */
+    border-radius: 10px;       /* optional: rounded corners */
+    height: 6vw;
+    width: 100%;
+}
+
+.pathwayText{
+    color: #606C38;
+    font-weight: 600;
+    font-family: 'Manuale';
+    font-size: 1.5em;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 80%;
+    padding-top: .5em;
+}
+
+.imageContainerRedesign:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay effect (optional if you want hover overlay text) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imageContainerRedesign:hover .overlay{
+    opacity: 1;
+}
+
+
+/* Responsive: stack everything */
+@media screen and (max-width: 767px) {
+    .overallPage {
+        flex-direction: column;
+    }
+
+    .mainStuff,
+    .leftside,
+    .moreInfo {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .TechCommunityRow,
+    .FactsContactRow {
+        flex-direction: column;
+    }
+}
