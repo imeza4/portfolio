@@ -216,19 +216,7 @@
             <div id="footer"></div>
     </main>
 <script>
-  function adjustContentPadding() {
-    const navbar = document.querySelector('nav');
-    const main = document.querySelector('main');
 
-    if (navbar && main) {
-      const navbarHeight = navbar.offsetHeight;
-      main.style.paddingTop = navbarHeight + "px";
-    }
-  }
-
-  // Run on load and resize
-  window.addEventListener('load', adjustContentPadding);
-  window.addEventListener('resize', adjustContentPadding);
     // Load the footer
     fetch('footer.html')
       .then(response => response.text())

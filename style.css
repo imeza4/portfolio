@@ -104,7 +104,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .section-1 {
     margin-bottom: 0;
     position: relative;
-    /* top: 9vw; */
+    top: 9vw;
 }
 
 /* Headers */
@@ -141,7 +141,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .overallPage {
     display: flex;
     flex-wrap: wrap;
-    margin: 1vw 7vw 7vw 7vw;
+    margin: 7vw 7vw 7vw 7vw;
 }
 
 .brand.title {
