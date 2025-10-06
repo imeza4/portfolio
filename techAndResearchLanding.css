@@ -10,7 +10,6 @@ body{
 }
 
 
-
 a {
     color: black;
     cursor: pointer;
@@ -109,13 +108,6 @@ li {
     }
  }
 
- .section-1 {
-    margin-bottom: 0;
-    position: relative;
-    top: 9vw;
-
- }
-
  @media screen and (max-width: 767px) {
     .main-header {
         font-size: 4rem;
@@ -131,13 +123,35 @@ li {
 
 /* End of Nav Bar stuff */
 
+/* header */
+.page-header {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    background-color: #E8F0FF;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 1vw;
+}
+
+.page-header header {
+    font-size: 2.5rem;
+    font-family: 'Manuale';
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+}
+
+
+/* end of header */
 
 
 
-/* start of overallLandingPage */
+
+/* start of techAndResearch */
 
  .overallPage{
-    margin: 13vw 7vw 7vw 7vw;
+    margin: 2vw 7vw 7vw 7vw;
+
  }
 .a {
     color: #8256A9;
@@ -145,16 +159,26 @@ li {
 }
 
 @media only screen and (max-width: 767px) {
+
     .overallPage {
         margin: 13vw 4vw 7vw 4vw;
+
     }
+
+    .page-header {
+        width: 100%;
+        background-color: #E8F0FF; /* header background color */
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3.5rem;
+}
     .techSection {
         display: flex;
         flex-direction: column;
         align-items: center; /* centers horizontally */
         justify-content: center; /* centers vertically */
-        gap: 1rem;
-        height: 80vh; /* take full screen height */
+        gap: 4rem;
+
     }
 
     .regularText {
@@ -187,12 +211,16 @@ li {
 }
 
  @media screen and (min-width: 767px) {
+        body {
+        padding-top: 80px;
+    }
     .techSection {
         font-size: inherit;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 4rem;
+
     }
     .regularText {
         font-size: 1.5rem;
@@ -227,8 +255,8 @@ li {
     transition: transform 0.3s ease;
     border: 3px solid #bfa9d3; /* <-- shorthand: width + style + color */
     border-radius: 10px;       /* optional: rounded corners */
-    padding: 1.2rem;         /* add padding instead of fixed height */
-    width: 100%;
+    padding: 5rem;         /* add padding instead of fixed height */
+    width: 100;
     height: auto;            /* let height grow with content */
     min-height: 4rem;        /* just to give some breathing room */
     background-color: #fff;  /* optional for clarity */
@@ -258,7 +286,7 @@ li {
 }
 
 .pathwayContainer:hover i {
-    color: #606C38;      /* color on hover */
+    color: #8256A9;      /* color on hover */
     transform: scale(1.2); /* grow the icon by 20% */
 }
 
